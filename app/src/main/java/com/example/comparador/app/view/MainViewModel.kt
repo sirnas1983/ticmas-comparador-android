@@ -1,12 +1,13 @@
 package com.example.comparador.app.view
-import com.example.comparador.app.model.Texts
 import androidx.lifecycle.ViewModel
-
+import com.example.comparador.app.model.Text
 
 
 class MainViewModel : ViewModel() {
 
-    fun compare(texts : Texts) : Boolean{
-        return texts.text1 == texts.text2
+    var text1 : Text = Text("")
+    var text2 : Text = Text("")
+    fun compare() : Boolean{
+        return text1.text == text2.text
     }
 }
