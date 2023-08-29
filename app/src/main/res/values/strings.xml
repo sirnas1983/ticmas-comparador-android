@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Comparador</string>
+    <string name="text1">Ingrese aqui un texto</string>
+    <string name="text2">Ingrese aqui otro texto</string>
+    <string name="button_text">Comparar</string>
+    <string name="response_text">Son iguales</string>
+    <string name="response_text_true">Los textos ingresados son iguales</string>
+    <string name="response_text_false">Los textos ingresados son distintos</string>
+
+</resources>
