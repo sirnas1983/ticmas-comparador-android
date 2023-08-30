@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun compare(){
 
-        mainViewModel.text1.text = binding.text1.text.toString()
-        mainViewModel.text2.text = binding.text2.text.toString()
+        mainViewModel.text1.value?.text = binding.text1.text.toString()
+        mainViewModel.text2.value?.text = binding.text2.text.toString()
 
         val textResult = binding.responseText
 

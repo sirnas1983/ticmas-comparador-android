@@ -30,6 +30,14 @@ class MainViewModelUnitTest {
     }
 
     @Test
+    fun mainViewModel_CheckInitialValue() = runTest{
+        var text1 = mainViewModel.text1.value?.text
+        var text2 = mainViewModel.text2.value?.text
+        assertEquals("", text1)
+        assertEquals("", text2)
+    }
+
+    @Test
     fun mainViewModel_CheckTrue() = runTest{
         var value = mainViewModel.compare()
         assertEquals(true, value)
@@ -37,6 +45,7 @@ class MainViewModelUnitTest {
 
     @Test
     fun mainViewModel_CheckFalse() = runTest{
+        mainViewModel.text2.value?.text = "a"
         var value = mainViewModel.compare()
         assertEquals(false, value)
     }
